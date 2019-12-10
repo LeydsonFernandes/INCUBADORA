@@ -4,16 +4,16 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-sm-12 text-center">
-          <h2 class="text-white mt-0">Título da notícia</h2>
+          <h2 class="text-white mt-0"><?php the_title();?></h2>
           <hr class="divider my-4">
         <figure>  
-            <img class="img_da_noticia" src="D:\Download\startbootstrap-creative-gh-pages\img\imagemnoticia.png" alt="imagem principal da noticia">
-            <figcaption  class="legenda_imagem" style="color: #fff">Legenda da imagem com data da noticia</figcaption>  
+           <?php the_post_thumbnail('post_thumbnail', array('class' =>'col-12 p-0'));?>
+            <figcaption  class="legenda_imagem" style="color: #fff"><?php the_title();?> - <?php echo get_the_date('d/m/y');?></figcaption>  
         </figure>
         <br>
         <br>
-        <p class="texto_noticia">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ratione ipsam quis dolorum sed perferendis quo repellendus vero quisquam quia pariatur eos, ullam sunt quod et officiis, deserunt at!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ratione ipsam quis dolorum sed perferendis quo repellendus vero quisquam quia pariatur eos, ullam sunt quod et officiis, deserunt at!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ratione ipsam quis dolorum sed perferendis quo repellendus vero quisquam quia pariatur eos, ullam sunt quod et officiis, deserunt at!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ratione ipsam quis dolorum sed perferendis quo repellendus vero quisquam quia pariatur eos, ullam sunt quod et officiis, deserunt at!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ratione ipsam quis dolorum sed perferendis quo repellendus vero quisquam quia pariatur eos, ullam sunt quod et officiis, deserunt at!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ratione ipsam quis dolorum sed perferendis quo repellendus vero quisquam quia pariatur eos, ullam sunt quod et officiis, deserunt at!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ratione ipsam quis dolorum sed perferendis quo repellendus vero quisquam quia pariatur eos, ullam sunt quod et officiis, deserunt at!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ratione ipsam quis dolorum sed perferendis quo repellendus vero quisquam quia pariatur eos, ullam sunt quod et officiis, deserunt at!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ratione ipsam quis dolorum sed perferendis quo repellendus vero quisquam quia pariatur eos, ullam sunt quod et officiis, deserunt at!</p>
-        </div>
+         <?php get_the_content(); ?> 
+       
           <hr class="divider light my-4">
           
     </div>

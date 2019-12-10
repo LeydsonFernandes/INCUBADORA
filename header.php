@@ -53,7 +53,7 @@
                 <a class="nav-link js-scroll-trigger" href="">Processos Seletivos</a>
               </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="">Postagens</a>
+            <a class="nav-link js-scroll-trigger" href="http://localhost/incubando/postagens/">Postagens</a>
           </li>
         </ul>
       </div>
